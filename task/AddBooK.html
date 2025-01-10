@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Book</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <header>
+      <h1>Booking System</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a id="logout" href="login.html">Log Out</a>
+      </nav>
+    </header>
+    <div class="add-book-form">
+      <form id="add-book-form">
+        <input 
+          class="add-book-element"
+          type="text"
+          id="title"
+          placeholder="Enter Book Name"
+        /><br /> <span id="t-error"></span>
+        <input
+          class="add-book-element"
+          type="text"
+          id="author"
+          placeholder="Enter author Name"
+        /><br /> <span id="a-error"></span>
+        <input
+          class="add-book-element"
+          type="text"
+          id="image"
+          placeholder="Enter image URL"
+        /><br /> <span id="img-error"></span>
+        <input
+          class="add-book-element"
+          type="number"
+          id="price"
+          placeholder="Enter your money"
+        /><br /><span id="p-error"></span>
+        <textarea name="" id="" rows="7"  class="add-book-element">
+
+        </textarea>
+        <br>
+        <select class="add-book-element" type="radio" id="avilablity" required>
+          <option value="Avilable">Avilable</option>
+          <option value="NotAvilable">NotAvilable</option>
+        </select>
+        <br />
+        <button class="add-book-button"  id="add-book-button"type="submit">Add New Book</button>
+      </form>
+    </div>
+    <footer>
+      <p>&copy; 2024 Booking Library System. All rights reserved.</p>
+    </footer>
+    <script src="./task.js"></script>
+  </body>
+</html>
